@@ -1,0 +1,178 @@
+// *** Mobile *** //
+.cards__container {
+    display: flex;
+    flex-direction: column;
+}
+
+// *** Desktop *** //
+@include telefono {
+    .cards__container {
+        flex-direction: row;
+    }
+}
+
+.card {
+    width: 327px;
+}
+
+// *** Desktop *** //
+@include telefono {
+    .card {
+        width: 350px;
+    }
+}
+
+.card.basic {
+    border-radius: 10px 0px 0px 10px;
+}
+
+.card.master {
+    border-radius: 0px 10px 10px 0px;
+}
+
+.card.basic,
+.card.master {
+    margin-top: 0px;
+}
+
+// *** Desktop *** //
+@include telefono {
+    .card.basic,
+    .card.master {
+        margin-top: 24px;
+    }
+}
+
+.card.basic,
+.card.professional,
+.card.master {
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px 20px 40px rgba(212, 210, 244, 0.5);
+    display: flex;
+    flex-direction: column;
+    height: 453px;
+    margin-bottom: 32px;
+    padding: 31px;
+    p {
+        color: #6E728E;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 28px;
+        margin-bottom: 24px;
+    }
+    .price {
+        align-items: center;
+        display: flex;
+        height: 71px;
+        justify-content: center;
+        margin-bottom: 32px;
+        p {
+            color: #4A4D60;
+            font-size: 40px;
+            font-weight: bold;
+            letter-spacing: -1.2px;
+            line-height: 49px;
+            margin: 0;
+        }
+        span {
+            color: #4A4D60;
+            font-size: 72px;
+            font-weight: bold;
+            letter-spacing: -2.16px;
+            line-height: 71px;
+            margin-left: 8px;
+        }
+    }
+    .features {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: 160px;
+        margin-bottom: 32px;
+        width: 100%;
+        p {
+            border-top: 1px solid #6E728E;
+            color: #6E728E;
+            font-size: 15px;
+            font-weight: bold;
+            height: 52px;
+            margin: 0;
+            padding-top: 12px;
+            text-align: center;
+            width: 100%;
+            &:nth-child(3) {
+                border-bottom: 1px solid #6E728E;
+            }
+        }
+    }
+    button {
+        background: linear-gradient(135deg, #A2A7F0 0%, #696EDD 100%);
+        border: 1px solid white;
+        border-radius: 6px;
+        color: white;
+        cursor: pointer;
+        font-size: 13px;
+        font-weight: bold;
+        height: 44px;
+        letter-spacing: 1.39286px;
+        line-height: 16px;
+        outline: none;
+        width: 100%;
+        transition: 0.8s;
+        &:active {
+            transform: scale(0.98);
+        }
+        &:hover {
+            background: white;
+            border: 1px solid #6D72DE;
+            color: #6D72DE;
+        }
+    }
+}
+
+.card.professional {
+    background: linear-gradient(135deg, #A2A7F0 0%, #696EDD 100%);
+    border-radius: 10px;
+    p {
+        color: white;
+    }
+    .price {
+        p {
+            color: white;
+        }
+        span {
+            color: white;
+        }
+    }
+    .features {
+        p {
+            border-top: 1px solid white;
+            color: white;
+            &:nth-child(3) {
+                border-bottom: 1px solid white;
+            }
+        }
+    }
+    button {
+        background: white;
+        border: 1px solid white;
+        color: #6D72DE;
+        &:active {
+            transform: scale(0.98);
+        }
+        &:hover {
+            background: #6D72DE;
+            border: 1px solid white;
+            color: white;
+        }
+    }
+}
+
+// *** Desktop *** //
+@include telefono {
+    .card.professional {
+        height: 100%;
+        padding: 55px 31px;
+    }
+}

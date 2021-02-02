@@ -1,0 +1,21 @@
+// *** Mobile *** //
+.pricing__container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.pricing__main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 64px;
+    width: 375px;
+}
+
+// *** Desktop *** //
+@include telefono {
+    .pricing__main {
+        width: 1050px;
+    }
+}

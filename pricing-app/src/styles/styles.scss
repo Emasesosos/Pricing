@@ -3,4 +3,6 @@
 @import './mixins/mixins';
 @import './base/base';
 // *** Components *** //
-@import './components/_pricing';
+@import './_pricing';
+@import './components/toggle';
+@import './components/cards';

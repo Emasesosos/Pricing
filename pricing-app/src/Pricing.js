@@ -1,23 +1,26 @@
-import { Top } from "./components/svg/Top";
+// import { Top } from "./components/svg/Top";
+import { Toggle } from "./components/Toggle";
+import { Cards } from "./components/Cards";
 
 function Pricing() {
 
   return (
 
     <div className="pricing__container">
-      <div className="pricing__topl">
+      {/*<div className="pricing__topl">
         <Top />
-      </div>
+      </div>*/}
       <div className="pricing__main">
-        Hola Mundo
+        <Toggle />
+        <Cards />
       </div>
-      <div className="pricing__topr">
+      {/*<div className="pricing__topr">
         <Top />
-      </div>
+      </div>*/}
     </div>
 
   );
-  
+
 }
 
 export default Pricing;
