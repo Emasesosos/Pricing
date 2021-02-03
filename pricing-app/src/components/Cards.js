@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Cards = () => {
+export const Cards = ({ changePrice }) => {
 
     return (
 
@@ -9,7 +9,7 @@ export const Cards = () => {
             <div className="card basic">
                 <p>Basic</p>
                 <div className="price">
-                    <p>$</p><span>19.99</span>
+                    <p>$</p><span>{ changePrice === 'A' ? '199.99' : '19.99'}</span>
                 </div>
                 <div className="features">
                     <p>500 GB Storage</p>
@@ -21,7 +21,7 @@ export const Cards = () => {
             <div className="card professional">
                 <p>Professional</p>
                 <div className="price">
-                    <p>$</p><span>24.99</span>
+                    <p>$</p><span>{ changePrice === 'A' ? '249.99' : '24.99'}</span>
                 </div>
                 <div className="features">
                     <p>1 TB Storage</p>
@@ -33,7 +33,7 @@ export const Cards = () => {
             <div className="card master">
                 <p>Master</p>
                 <div className="price">
-                    <p>$</p><span>39.99</span>
+                    <p>$</p><span>{ changePrice === 'A' ? '399.99' : '39.99'}</span>
                 </div>
                 <div className="features">
                     <p>2 TB Storage</p>

@@ -40,7 +40,7 @@
             width: 0;
             height: 0;
         }
-        /* The slider */
+        // /* The slider */
         .slider {
             position: absolute;
             cursor: pointer;
@@ -57,16 +57,16 @@
             content: "";
             height: 24px;
             width: 24px;
-            left: 4px;
+            left: 28px; //4px;//28px;
             bottom: 4px;
             background-color: white;
             -webkit-transition: .4s;
             transition: .4s;
         }
         input:checked+.slider:before {
-            -webkit-transform: translateX(24px);
-            -ms-transform: translateX(24px);
-            transform: translateX(24px);
+            -webkit-transform: translateX(-24px);
+            -ms-transform: translateX(-24px);
+            transform: translateX(-24px);
         }
         /* Rounded sliders */
         .slider.round {
@@ -79,7 +79,7 @@
 }
 
 // *** Desktop *** // 
-@include telefono {
+@include tablet {
     .toggle__container {
         margin-bottom: 64px;
     }

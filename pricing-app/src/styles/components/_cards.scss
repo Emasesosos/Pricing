@@ -5,7 +5,7 @@
 }
 
 // *** Desktop *** //
-@include telefono {
+@include tablet {
     .cards__container {
         flex-direction: row;
     }
@@ -16,7 +16,7 @@
 }
 
 // *** Desktop *** //
-@include telefono {
+@include tablet {
     .card {
         width: 350px;
     }
@@ -36,7 +36,7 @@
 }
 
 // *** Desktop *** //
-@include telefono {
+@include tablet {
     .card.basic,
     .card.master {
         margin-top: 24px;
@@ -170,7 +170,7 @@
 }
 
 // *** Desktop *** //
-@include telefono {
+@include tablet {
     .card.professional {
         height: 100%;
         padding: 55px 31px;

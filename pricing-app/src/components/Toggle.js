@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Toggle = () => {
+export const Toggle = ({ togglePrice }) => {
 
     return (
 
@@ -11,7 +11,10 @@ export const Toggle = () => {
             <div className="toggle__slider">
                 <p>Annually</p>
                 <label class="switch">
-                    <input type="checkbox"/>
+                    <input 
+                        type="checkbox"
+                        onChange={ togglePrice }
+                    />
                     <span class="slider round"></span>
                 </label>
                 <p>Monthly</p>

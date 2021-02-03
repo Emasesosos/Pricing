@@ -3,6 +3,9 @@
     align-items: center;
     display: flex;
     justify-content: center;
+    position: relative;
+    max-width: 100vw;
+    overflow: hidden;
 }
 
 .pricing__main {
@@ -11,11 +14,46 @@
     flex-direction: column;
     margin-top: 64px;
     width: 375px;
+    z-index: 1;
 }
 
-// *** Desktop *** //
-@include telefono {
+.pricing__topl {
+    height: 760px;
+    left: -120px;
+    position: absolute;
+    top: 443px;
+    transform: rotate(180deg);
+    width: 472px;
+} 
+
+
+.pricing__topr {
+    height: 760px;
+    position: absolute;
+    right: -290px;
+    top: -30px;
+    width: 472px;
+} 
+
+// *** Tablet *** //
+@include tablet {
     .pricing__main {
-        width: 1050px;
+        width: 768px;
+    }
+    .pricing__topr {
+        right: -140px;
+    }
+}
+
+// // *** Desktop *** //
+@include desktop {
+    .pricing__main {
+        width: 1440px;
+    }
+    .pricing__topl {
+       left: 500px;
+    }
+    .pricing__topr {
+        right: 460px;
     }
 }
