@@ -24,8 +24,7 @@
     top: 443px;
     transform: rotate(180deg);
     width: 472px;
-} 
-
+}
 
 .pricing__topr {
     height: 760px;
@@ -33,7 +32,7 @@
     right: -290px;
     top: -30px;
     width: 472px;
-} 
+}
 
 // *** Tablet *** //
 @include tablet {
@@ -41,7 +40,7 @@
         width: 768px;
     }
     .pricing__topr {
-        right: -140px;
+        right: -180px;
     }
 }
 
@@ -51,9 +50,9 @@
         width: 1440px;
     }
     .pricing__topl {
-       left: 500px;
+        left: 50px;
     }
     .pricing__topr {
-        right: 460px;
+        right: 50px;
     }
 }
